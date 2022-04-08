@@ -1,0 +1,38 @@
+﻿@using AG.MovieStore.Web.Models.Movie
+@model CreateMovieModel
+
+<form asp-action="Create" asp-controller="Admin" method="post">
+
+    <div>
+        <label>Film Adını Giriniz:</label>
+        <input asp-for="@Model.MovieName" />
+
+    </div>
+
+
+    <div>
+        <label>Filmin Yayınlanma Yılını Giriniz:</label>
+        <input type="datetime" asp-for="@Model.CreatedTime" />
+    </div>
+
+    <div>
+        <label>Filmin Yönetmenini Giriniz:</label>
+        <input type="text" asp-for="@Model.Director" />
+    </div>
+
+
+    <div>
+        <label>Filmin Puanını Giriniz:</label>
+        <input type="number" asp-for="@Model.Score" />
+    </div>
+
+    <div>
+        <button>Kaydet</button>
+    </div>
+
+
+
+
+
+
+</form>

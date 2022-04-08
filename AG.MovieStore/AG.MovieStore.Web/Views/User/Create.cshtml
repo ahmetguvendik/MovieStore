@@ -1,0 +1,37 @@
+﻿@model CreateUserModel
+
+<form asp-action="Create" asp-controller="User" method="post">
+
+    <div>
+        <label>Kullanıcı Adınızı Giriniz:</label>
+        <input asp-for="@Model.UserName"/>
+    </div>
+
+
+    <div>
+        <label>Email Giriniz:</label>
+        <input type="email" asp-for="@Model.UserEmail"/>
+    </div>
+
+    <div>
+        <label>Şifrenizi Giriniz:</label>
+        <input type="password" asp-for="@Model.Password"/>
+    </div>
+
+
+    <div>
+        <label>Şifrenizi Tekrar Giriniz:</label>
+        <input type="password" asp-for="@Model.ConfirmPassword"/>
+    </div>
+
+    <div>
+            <button>ÜYE OL</button>    
+    </div>
+
+    <div>
+       @ViewBag.ErrorMessage
+    </div>
+        <div asp-validation-summary="ModelOnly"></div>
+
+
+</form>

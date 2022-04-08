@@ -1,0 +1,28 @@
+﻿@using AG.MovieStore.Web.Data.Entities.Movies
+@model List<Movie>
+
+<table class="table table-hovered table-bordered table-sm">
+    <thead>
+        <tr>
+            <th>Film Adı</th>
+            <th>Film Puanı</th>
+            <th>Çıkış Yılı</th>
+            <th>Yönetmen</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+
+                <th>@item.MovieName</th>
+                <th>@item.Score</th>
+                <th>@item.CreatedTime</th>
+                <th>@item.Director</th>
+                <th><a asp-action="Detail">Detay</a></th>
+
+            </tr>
+        }
+    </tbody>
+
+</table>

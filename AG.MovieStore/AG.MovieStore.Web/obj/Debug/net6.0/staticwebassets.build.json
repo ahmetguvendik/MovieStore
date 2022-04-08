@@ -1,0 +1,19 @@
+{
+  "Version": 1,
+  "Hash": "steqWV9KNcJ4F48bCClcow6UqvNVkIwiGAZlTehuMHY=",
+  "Source": "AG.MovieStore.Web",
+  "BasePath": "_content/AG.MovieStore.Web",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "AG.MovieStore.Web\\wwwroot",
+      "Source": "AG.MovieStore.Web",
+      "ContentRoot": "C:\\Users\\ahmet\\source\\repos\\AG.MovieStore\\AG.MovieStore.Web\\wwwroot\\",
+      "BasePath": "_content/AG.MovieStore.Web",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": []
+}

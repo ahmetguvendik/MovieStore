@@ -1,0 +1,27 @@
+﻿@model UpdateMovieModel
+
+<form asp-action="Update" asp-controller="Admin" method="post">
+    <input type="hidden" asp-route-id =@Model.Id />
+    <div>
+        <label>Film Adını Giriniz:</label>
+        <input asp-for="@Model.MovieName" />
+    </div>
+
+    <div>
+        <label>Filmin Yönetmenini Giriniz:</label>
+        <input type="text" asp-for="@Model.Director" />
+    </div>
+
+
+    <div>
+        <label>Filmin Puanını Giriniz:</label>
+        <input type="number" asp-for="@Model.Score" />
+    </div>
+
+    <div>
+        <button>Güncelle</button>
+    </div>
+
+
+
+</form>
